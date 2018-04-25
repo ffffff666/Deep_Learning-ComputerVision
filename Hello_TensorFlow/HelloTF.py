@@ -1,0 +1,10 @@
+import tensorflow as tf
+sess = tf.InteractiveSession()
+tf.global_variables_initializer().run()
+hello = tf.constant('Hello, TensorFlow!')
+print(sess.run(hello))
+a = tf.constant(66)
+b = tf.constant(88)
+print(sess.run(a + b))
+k = tf.zeros([10])
+print(sess.run(k))
